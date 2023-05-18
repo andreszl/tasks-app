@@ -19,7 +19,7 @@ export default (configuration: interfaces.request.IConfiguration) => {
 	}
 
 	return fetch(
-		`${configuration.host || process.env.REACT_APP_API_URL || ''}/${configuration.url}`,
+		`${'http://ec2-18-224-135-141.us-east-2.compute.amazonaws.com:3002'}/${configuration.url}`,
 		{ ...options },
 	)
 		.then((response) => response.json())
